@@ -1,52 +1,56 @@
+% !TEX encoding = UTF-8 Unicode
 \documentclass[a4paper]{article}
+
 \usepackage{multicol}
 \usepackage{color}
 \usepackage{url}
-\usepackage{fontenc} % enable Cyrillic fonts
+\usepackage[T2A]{fontenc} % enable Cyrillic fonts
 \usepackage[utf8]{inputenc} % make weird characters work
-\usepackage{graphicx} 
-\usepackage[english,serbian]{babel}
-% \usepackage[english,serbianc]{babel} %ukljuciti babel sa ovim opcijama, umesto gornjim, ukoliko se koristi cirilica
+\usepackage{graphicx}
 
+
+\usepackage[english,serbian]{babel}
+%\usepackage[english,serbianc]{babel} %ukljuciti babel sa ovim opcijama, umesto gornjim, ukoliko se koristi cirilica
 \usepackage[unicode]{hyperref}
 \hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
 
 \usepackage{listings}
-% 
-% %\newtheorem{primer}{Пример}[section] %ćirilični primer
+
+%\newtheorem{primer}{Пример}[section] %ćirilični primer
 \newtheorem{primer}{Primer}[section]
-% 
+
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
+
 \lstset{ 
-   backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
-   basicstyle=\scriptsize\ttfamily,        % the size of the fonts that are used for the code
-   breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
-   breaklines=true,                 % sets automatic line breaking
-   captionpos=b,                    % sets the caption-position to bottom
-   commentstyle=\color{mygreen},    % comment style
-   deletekeywords={...},            % if you want to delete keywords from the given language
-   escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
-   extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
-   firstnumber=1000,                % start line enumeration with line 1000
-   frame=single,	                   % adds a frame around the code
-   keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-   keywordstyle=\color{blue},       % keyword style
-   language=Python,                 % the language of the code
-   morekeywords={*,...},            % if you want to add more keywords to the set
-   numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
-   numbersep=5pt,                   % how far the line-numbers are from the code
-   numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
-   rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-   showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
-   showstringspaces=false,          % underline spaces within strings only
-   showtabs=false,                  % show tabs within strings adding particular underscores
-   stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
-   stringstyle=\color{mymauve},     % string literal style
-   tabsize=2,	                   % sets default tabsize to 2 spaces
-   title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
- }
+	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+	basicstyle=\scriptsize\ttfamily,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	firstnumber=1000,                % start line enumeration with line 1000
+	frame=single,	                   % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=Python,                 % the language of the code
+	morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{mymauve},     % string literal style
+	tabsize=2,	                   % sets default tabsize to 2 spaces
+	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
 
 
 \begin{document}
@@ -167,8 +171,8 @@ Free” je pored svoje jedine funkcije, paljenja i gašenja blic LED svetla, nel
 
 \section{Zavisnost od interneta}
 
-Razvoj interneta i mogućnosti koje on nudi dovodi do toga ga sve više ljudi koristi u sve većoj meri.
-Kao što je slučaj sa narkoticima i alkoholom, ljudi mogu razviti i zavisnost od Interneta. Prepoznavanje ove zavisnosti uglavnom nije jednostavno jer za razliku od prethodno pomenutih koje podrazumevaju fizičku zavisnost i ne donose nikakvu korist, Internet nudi dosta benefita i njegovo korišćenje je gotovo neizbežno u svakodnevnom životu. Stoga, mnogi znaci zavisnosti od Interneta kao na primer vreme provedeno koristeći Internet mogu biti opravdani. Postoje podeljena mišljenja oko toga da li zavisnost od interneta uopste postoji. Tradicionalno, zavisnost se definise kao kontinuirana i nekontrolisana upotreba neke hemijske supstance uprkos znanju o njenim štetnim posledicama, dok proširena definicija uključuje svako  kontinuirano i nekontrolisano ponašanje koje zavisnik prepoznaje kao štetno. Prema proširenoj definiciji ljudi mogu biti zavisni od hrane, seksa, treniranja, kockanja, korišćenja računara i drugih aktivnosti \cite{ethics}.
+Razvoj interneta i mogućnosti koje on nudi dovodi do toga da ga sve više ljudi koristi u sve većoj meri.
+Kao što je slučaj sa narkoticima i alkoholom, ljudi mogu razviti i zavisnost od Interneta. Prepoznavanje ove zavisnosti uglavnom nije jednostavno jer za razliku od prethodno pomenutih koje podrazumevaju fizičku zavisnost i ne donose nikakvu korist. Internet nudi dosta benefita i njegovo korišćenje je gotovo neizbežno u svakodnevnom životu. Stoga, mnogi znaci zavisnosti od Interneta kao na primer vreme provedeno koristeći Internet mogu biti opravdani. Postoje podeljena mišljenja oko toga da li zavisnost od Interneta uopšte postoji. Tradicionalno, zavisnost se definise kao kontinuirana i nekontrolisana upotreba neke hemijske supstance uprkos znanju o njenim štetnim posledicama, dok proširena definicija uključuje svako  kontinuirano i nekontrolisano ponašanje koje zavisnik prepoznaje kao štetno. Prema proširenoj definiciji ljudi mogu biti zavisni od hrane, seksa, treniranja, kockanja, korišćenja računara i drugih aktivnosti \cite{ethics}.
 
 \subsection{Prepoznavanje i rasprostranjenost}
 \label{subsec:podnaslovZI1}
@@ -223,7 +227,6 @@ Dobijeni rezultat pokazuje da je 6\% ljudi na svetu zavisno od Interneta. Važno
 \\
 \indent Na osnovu različitih istraživanja, pravljenjem veza između profila ličnosti ispitanika i njihovog vremena provedenog na društvenim mrežama, može se zaključiti da usamljenije i često depresivne osobe teže ka provođenju više vremena na društvenim mrežama, isto kao i kod zavisnika od nekih opojnih droga. Međutim, mišljenja naučnika su podeljena u stavu da li zavisnost od društvenih mreža uopšte treba klasifikovati kao poremećaj. Dok je u Kini i Južnoj Koreji zavisnost od drustvenih mreža klasifikovana kao psihički poremećaj, to nije slučaj u ostatku sveta.
 \\
-% \begin{primer}
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{top_6_networks.png}
@@ -231,8 +234,6 @@ Dobijeni rezultat pokazuje da je 6\% ljudi na svetu zavisno od Interneta. Važno
 \caption{Prvih šest društvenih mreža sa najviše korisnika}
 \label{fig:top_networks}
 \end{figure}
-% \end{primer}
-
 
 \subsection{Zavisnost od Internet igara}	
 \label{subsec:podnaslovIP6}
@@ -274,13 +275,15 @@ Neki od fizičkih simptoma mogu biti:
 
 
 \section{Zaključak}
-U radu su dotaknute razne teme koje su često zanemarene ili nedovoljno prisutne kod korisnika Interneta. Obuhvatili smo konkretne teme od raznih prevara na Internetu, do zloupotrebe Interneta od strane državnih i privatnih institucija, i na samom kraju zavisnosti Interneta. Pokušali smo što više takvih tema ukratko da obradimo, koje su inače veoma opširne i koje su predmeti velikog broja izučavanja. Pre nego što pristupimo samim solucijama ovih problema, treba podići opštu svest ljudi i postarati se da što veći broj ljudi bude upućen u ovu problematiku. To je zapravo i bio cilj ovog rada, informisanje regularnih korisnika Interneta kroz kratke opise problema koji inače nisu toliko očigledni. Nadamo se da smo ovim kratkim uvodom u veoma ozbiljnu priču korisnike učinili opreznijim pri korišćenju usluga na Internetu. A kao još bitnije, da smo ih podstakli na dalje istraživanje.
 \label{sec:zakljucak}
+U radu su dotaknute razne teme koje su često zanemarene ili nedovoljno prisutne kod korisnika Interneta. Obuhvatili smo konkretne teme od raznih prevara na Internetu, do zloupotrebe Interneta od strane državnih i privatnih institucija, i na samom kraju zavisnosti Interneta. Pokušali smo što više takvih tema ukratko da obradimo, koje su inače veoma opširne i koje su predmeti velikog broja izučavanja. Pre nego što pristupimo samim solucijama ovih problema, treba podići opštu svest ljudi i postarati se da što veći broj ljudi bude upućen u ovu problematiku. To je zapravo i bio cilj ovog rada, informisanje regularnih korisnika Interneta kroz kratke opise problema koji inače nisu toliko očigledni. Nadamo se da smo ovim kratkim uvodom u veoma ozbiljnu priču korisnike učinili opreznijim pri korišćenju usluga na Internetu. A kao još bitnije, da smo ih podstakli na dalje istraživanje.
 
 \addcontentsline{toc}{section}{Literatura}
 \appendix
 \bibliography{seminarski} 
 \bibliographystyle{ieeetr}
 \appendix
+
+\clearpage
 
 \end{document}
