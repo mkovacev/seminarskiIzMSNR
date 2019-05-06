@@ -1,0 +1,140 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass{beamer}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[english,serbian]{babel}
+\usepackage{chemfig}
+%\usepackage[version=3]{mhchem}
+%\usepackage{multicol}
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}       % or try default, Darmstadt, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{serif}    % or try default, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\usepackage{listings}
+\lstset{ 
+  backgroundcolor=\color{white},
+  basicstyle=\scriptsize\ttfamily,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\color{mygreen},
+  deletekeywords={...},            
+  escapeinside={\%*}{*)},          
+  extendedchars=true,
+  firstnumber=1,              
+  frame=single,	                
+  keepspaces=true,
+  keywordstyle=\color{blue},     
+  language=Python,                
+  morekeywords={*,...},
+  numbers=left, 
+  numbersep=4pt,                  
+  numberstyle=\tiny\color{mygray}, 
+  rulecolor=\color{black},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  stepnumber=1, 
+  stringstyle=\color{mymauve},
+  tabsize=1,
+  title=\lstname
+}
+\usepackage{pgfpages}
+\pgfpagesuselayout{resize to}[%
+  physical paper width=8in, physical paper height=6in]
+
+
+% Here's where the presentation starts, with the info for the title slide
+\title{Komunikacija preko mreže}
+\author{K.Bakić M.Kovačević N.Milovanović N.Kovačević}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% These three lines create an automatically generated table of contents.
+
+%---: SPISAK TEMA
+\begin{frame}{Pregled}
+ \tableofcontents
+\end{frame}
+
+\section{Uvod}
+%prikaz na uskoj plavoj traci
+	\begin{frame}{Uvod}
+		\begin{itemize}
+		\item dkskdjs
+		\end{itemize}
+	\end{frame}
+	%section -----: Iznad, na crnom
+\section{Izgubljeno poverenje}
+	\subsection*{Vikipedija}
+		\begin{frame}{Vikipedija}
+			VIKIPEDIJA tekst
+		\end{frame}
+
+	\subsection*{Internet prevare}
+		\begin{frame}{Internet prevare}
+			\begin{itemize}
+				\item Jednostavna sintaksa omogućava laku čitljivost koda
+			\end{itemize}
+		\end{frame}
+	\subsection*{Društvene mreže}
+		\begin{frame}{Društvene mreže}
+			Društvene mreže tekst
+		\end{frame}
+	\subsection*{Podnaslov 4}
+		\begin{frame}{Podnaslov 4}
+		Društvene mreže tekst
+		\end{frame}
+
+\section{Zavisnost od interneta}
+	\subsection*{Podnaslov1}
+	\begin{frame}{Podnaslov1}
+			PODNASLOV1 tekst
+	\end{frame}
+
+	\subsection*{Podnaslov2}
+		\begin{frame}{Podnaslov2}
+			\begin{itemize}
+			\item Jednostavna sintaksa omogućava laku čitljivost koda
+			\end{itemize}
+		\end{frame}
+	\subsection*{Podnaslov3}
+	\begin{frame}{Podnaslov3}
+		Podnaslov4 tekst
+	\end{frame}
+	
+	\subsection*{Podnaslov4}
+	\begin{frame}{Podnaslov4}
+		Podnaslov4 tekst
+	\end{frame}
+	
+
+\section{Literatura}
+
+\begin{frame}{Literatura}
+
+\bibliography{seminarski.bib}
+
+\end{frame}
+
+\end{document}
