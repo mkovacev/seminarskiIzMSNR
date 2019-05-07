@@ -1,6 +1,8 @@
 % !TEX encoding = UTF-8 Unicode
 \documentclass{beamer}
 
+
+
 \usepackage{color}
 \usepackage{url}
 \usepackage[T2A]{fontenc}
@@ -8,22 +10,32 @@
 \usepackage{graphicx}
 \usepackage[english,serbian]{babel}
 \usepackage{chemfig}
-%\usepackage[version=3]{mhchem}
+\usepackage[version=3]{mhchem}
 \usepackage{multicol}
+
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=red,      
+	urlcolor=blue,
+}
 
 \mode<presentation>
 {
-  \usetheme{Warsaw}       % or try default, Darmstadt, Warsaw, ...
-  \usecolortheme{default} % or try albatross, beaver, crane, ...
-  \usefonttheme{serif}    % or try default, structurebold, ...
+  \usetheme{Warsaw} 
+  \usecolortheme{default} 
+  \usefonttheme{serif}
   \setbeamertemplate{navigation symbols}{}
   \setbeamertemplate{caption}[numbered]
+  
 } 
 
 
-\definecolor{mygreen}{rgb}{0,0.6,0}
-\definecolor{mygray}{rgb}{0.5,0.5,0.5}
-\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{mygreen}{rgb}{0,0.7,0}
+\definecolor{mygray}{rgb}{0.6,0.6,0.5}
+\definecolor{mymauve}{rgb}{0.4,0.1,0.7}
 
 \usepackage{listings}
 \lstset{ 
@@ -57,84 +69,127 @@
 \usepackage{pgfpages}
 \pgfpagesuselayout{resize to}[%
   physical paper width=8in, physical paper height=6in]
+\pagenumbering{alph}
 
-
-% Here's where the presentation starts, with the info for the title slide
-\title{Komunikacija preko mreže:\\izgubljeno poverenje, zavisnost od Interneta}
-\author{K.Bakić, M.Kovačević, N.Milovanović, N.Kovačević}
+\title[\color{gray}Komunikacija preko mreže]{Komunikacija preko mreže:\\izgubljeno poverenje, zavisnost od Interneta}
+\author{K.Bakić M.Kovačević N.Milovanović N.Kovačević}
+\institute{Matematički fakultet, Beograd}
 \date{\today}
 
 \begin{document}
 
-\begin{frame}
-  \titlepage
-\end{frame}
-
-% These three lines create an automatically generated table of contents.
+	\begin{frame}
+	
+	  \titlepage
+	\end{frame}
 
 %---: SPISAK TEMA
-\begin{frame}{Pregled}
- \tableofcontents
-\end{frame}
-
-\section{Uvod}
-%prikaz na uskoj plavoj traci
-	\begin{frame}{Uvod}
-		\begin{itemize}
-		\item dkskdjs
-		\end{itemize}
+	\begin{frame}{Sadržaj}
+		\tableofcontents 
 	\end{frame}
-	%section -----: Iznad, na crnom
-\section{Izgubljeno poverenje}
-	\subsection*{Vikipedija}
-		\begin{frame}{Vikipedija}
-			VIKIPEDIJA tekst
-		\end{frame}
-
-	\subsection*{Internet prevare}
-		\begin{frame}{Internet prevare}
+	
+	\section{Uvod}
+	%prikaz na uskoj plavoj traci
+		\begin{frame}{Uvod}
 			\begin{itemize}
-				\item Pecanje
-				\item Nigerijska prevara
-				\item Društvene mreže
+				\item Internet je globalna mreža koja nam daje mogućnost komunikacije i deljenja resursa na Zemlji. 
+				\item Mrežne komunikacije imaju poseban značaj, sve oko nas se pretvara u kompjuter.
+				\item Računari i računarske mreže se danas mogu zloupotrebljavati na razne načine.
+				\item Javlja se velika zavisnost od Interneta (globalni problem).
 			\end{itemize}
 		\end{frame}
-	\subsection*{Masovna kontrola, posmatranje i privatnost na Internetu}
-		\begin{frame}{Masovna kontrola, posmatranje i privatnost na Internetu}
-			Masovna kontrola, posmatranje i privatnost na Internetu tekst
-		\end{frame}
-	
-\section{Zavisnost od interneta}
-	\subsection*{Prepoznavanje i rasprostranjenost}
-	\begin{frame}{Prepoznavanje i rasprostranjenost}
-			Prepoznavanje i rasprostranjenost tekst
-	\end{frame}
-
-	\subsection*{Zavisnost od društvenih mreža}
-		\begin{frame}{Zavisnost od društvenih mreža}
-		Zavisnost od društvenih mreža tekst
-			%proba
+		%section -----: Iznad, na crnom
+	\section{Izgubljeno poverenje}
+		\subsection*{Vikipedija}
+			\begin{frame}{Vikipedija}
 			\begin{itemize}
-			\item proba :D
-			\end{itemize}
+				\item Vikipediju \textcolor{gray}{(eng. Wikipedia)} doživljavamo kao veliki i bogat skup informacija.
+				\item javno je dostupna
+				\item više autora može da napiše jedan članak		
+				\item nepouzdane informacije	 
+				\item izvor informacija može da ostane potpuno nepoznat
+				\item Korsgaard i Jensen su 2009. godine predložili promene na softveru.
+			 \end{itemize}
+			\end{frame}
+	
+		\subsection*{Internet prevare}
+			\begin{frame}{Internet prevare}
+				\begin{itemize}
+					\item \textcolor{blue}{Pecanje}
+						\begin{itemize}
+							\item vrsta napada socijalnog inženjeringa
+							\item cilj-krađa identiteta korisnika
+							\item napretkom tehnologije dolazi do veće rasprostranjenosti
+						\end{itemize}
+					\item\textcolor{blue}{Nigerijska prevara}
+						\begin{itemize}
+							\item nastaje oko 1980. godine u Nigeriji
+							\item zahteva se pomoć oko transfera novca
+							\item Na teritoriji Republike Srbije 2008. i 2009. godine je prijavljeno devet krivičnih dela prevare sa elementima „Nigerijskih prevara“.
+						\end{itemize}
+					\item \textcolor{blue}{Društvene mreže}
+						\begin{itemize}
+							\item Fejsbuk, Tviter, Skajp...
+							\item \textbf{cilj}: druženje i komunikacija sa prijateljima
+							\item\textbf{problemi}: krađe identiteta, svađe, širenje eksplicitnog materijala...
+						\end{itemize}
+					\end{itemize}
+			\end{frame}
+			\begin{frame}{Pecanje-primer}
+			\begin{figure}[h!]
+				\begin{center}
+					\includegraphics[scale=0.25]{phishing_amazon.png}
+				\end{center}
+				\caption{Primer pecanja }
+				\label{fig:phishing}
+			\end{figure}
+			\end{frame}
+		\subsection*{Masovna kontrola, posmatranje i privatnost na Internetu}
+			\begin{frame}{Masovna kontrola, posmatranje i privatnost na Internetu}
+				Masovna kontrola, posmatranje i privatnost na Internetu tekst
+			\end{frame}
+		
+	\section{Zavisnost od interneta}
+		\subsection*{Prepoznavanje i rasprostranjenost}
+		\begin{frame}{Prepoznavanje i rasprostranjenost}
+				Prepoznavanje i rasprostranjenost tekst
 		\end{frame}
-	\subsection*{zavisnost od Internet igara}
-	\begin{frame}{zavisnost od Internet igara}
-		zavisnost od Internet igara tekst
-	\end{frame}
 	
-	\subsection*{Posledice}
-	\begin{frame}{Posledice}
-		Posledice tekst
-	\end{frame}
+		\subsection*{Zavisnost od društvenih mreža}
+			\begin{frame}{Zavisnost od društvenih mreža}
+			Zavisnost od društvenih mreža tekst
+				%proba
+				\begin{itemize}
+				\item proba :D
+				\end{itemize}
+			\end{frame}
+		\subsection*{zavisnost od Internet igara}
+		\begin{frame}{zavisnost od Internet igara}
+			zavisnost od Internet igara tekst
+		\end{frame}
+		
+		\subsection*{Posledice}
+		\begin{frame}{Posledice}
+			Posledice tekst
+		\end{frame}
+		
 	
-
-\section{Literatura}
-
-\begin{frame}{Literatura}
-
-\bibliography{seminarski.bib}
-
-\end{frame}
+	\section{Literatura}
+		\begin{frame}{Literatura}
+		%	\bibliography{seminarski} 
+			\begin{itemize}
+				\scriptsize
+				\item Bruce Schneier, Data and Goliath (2015)
+				\item Evgeny Morozov, The Net Delusion: The Dark Side of Internet Freedom (2011)
+				\item Glenn Greenwald, No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State (2014)
+				\item Jelena Matijasević, Žaklina Spalević, Vrste internet prevara-pojam,značaj i uticaj na ekonomske i moralne aspekte društvene zajednice (2012)
+				\item Mudasir Ahmad Wani, Suraiya Jabina, A sneak into the Devil’s Colony- Fake Profiles in Online Social Networks (2017)
+				\item Statista, Social networks ranked by number of users (2019)
+				\item Teun Lucassen, Trust in Online Information (2013)
+				\item Turkle, Sherry, Alone together: Why we expect more from technology and less from each other (2017)
+				
+			\end{itemize}
+			\bibliographystyle{unsrt}
+		\end{frame}
 
 \end{document}
