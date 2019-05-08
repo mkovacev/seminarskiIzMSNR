@@ -1,0 +1,5 @@
+\babel@toc {serbian}{}
+\beamer@sectionintoc {1}{Uvod}{3}{0}{1}
+\beamer@sectionintoc {2}{Izgubljeno poverenje}{4}{0}{2}
+\beamer@sectionintoc {3}{Zavisnost od interneta}{8}{0}{3}
+\beamer@sectionintoc {4}{Literatura}{13}{0}{4}
